@@ -39,7 +39,7 @@ public class StudentListController {
         return "students";
     }
 
-    @GetMapping("/list-students-reactive")
+    @GetMapping("/list-students-reactive3")
     public String listUsersReactive3(Model model)
     {
         Flux<Student> userFlux = repository.findAll().delayElements(Duration.ofSeconds(1));
